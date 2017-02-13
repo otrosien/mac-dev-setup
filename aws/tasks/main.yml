@@ -4,3 +4,6 @@
 - name: Install aws-cli
   homebrew: name=awscli
 
+- name: Install STUPS
+  pip: name=stups virtualenv={{ansible_env.HOME}}/stups state=latest
+
