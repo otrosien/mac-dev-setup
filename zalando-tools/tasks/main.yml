@@ -1,3 +1,5 @@
 - name: Install swagger-codegen
   homebrew: name=swagger-codegen
+- name: Install go
+  homebrew: name=go
 
