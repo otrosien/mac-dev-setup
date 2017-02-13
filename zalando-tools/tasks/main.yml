@@ -1,0 +1,3 @@
+- name: Install swagger-codegen
+  homebrew: name=swagger-codegen
+
