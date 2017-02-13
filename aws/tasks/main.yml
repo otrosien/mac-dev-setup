@@ -7,9 +7,6 @@
 - name: Install virtualenv
   pip: name=virtualenv executable=pip3
 
-- name: Install virtualenvwrapper
-  pip: name=virtualenvwrapper executable=pip3
-
 - name: Install STUPS
   pip: name=stups virtualenv={{ansible_env.HOME}}/stups virtualenv_python=python3 state=latest
 
