@@ -1,7 +1,14 @@
 - name: Install swagger-codegen
   homebrew: name=swagger-codegen
+
 - name: Install go
   homebrew: name=go
 
 - name: Install travis cli
   gem: name=travis version=1.8.6
+
+- name: Install sbt
+  homebrew: name=sbt
+
+- name: Install gdub (gw)
+  homebrew: name=gdub

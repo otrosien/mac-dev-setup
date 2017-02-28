@@ -32,7 +32,9 @@ export DOCKER_IP=$(echo "$DOCKER_HOST" | sed -E 's|(.*//)?([^/:]*).*|\2|g')
 export CONFIG_SERVER_REPO=/Users/{{ ansible_env.DEV_USERNAME }}/dev/git/ng/ng-config-repo
 export SPRING_CLOUD_CONFIG_URI=http://${DOCKER_IP}:8888
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export GOPATH=/Users/{{ ansible_env.DEV_USERNAME }}/dev/go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH="$PATH:/usr/local/bin:/usr/local/opt/go/libexec/bin:/Users/{{ ansible_env.DEV_USERNAME }}/bin"
 
 
 # gcloud
